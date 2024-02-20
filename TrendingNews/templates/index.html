@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top 20 Stories</title>
+</head>
+<body>
+    <h1>Top 20 Stories</h1>
+    <ul>
+        {% for story in data %}
+            <li>
+                <h2>{{ story.stories.title }}</h2>
+                <p><strong><small>Article Keywords:</small></strong> {{ story.final_keywords|join(', ') }} <strong><small>    Date:</small></strong> {{ story.stories.date }}</p></p>
+                <p>Summary: {{ story.article_summary }}</p>
+                <p>Get full article at: <a href="{{ story.stories.url }}" target="_blank">{{ story.stories.url }}</a></p>
+                
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
