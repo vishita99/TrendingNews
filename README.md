@@ -50,3 +50,6 @@ The python server will start running, once successful run `<your_server_address>
     streamlit run trending_news_frontend.py
 
 Visit the URL provided by Streamlit in your browser.
+
+Here is an example of webpage you would see
+![TN](https://github.com/vishita99/TrendingNews/assets/63235722/de5bccbd-ee80-42ec-84e8-cec926fc2f8c)
